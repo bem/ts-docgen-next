@@ -1,0 +1,1 @@
+# ts-docgen-loader
