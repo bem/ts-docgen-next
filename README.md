@@ -1,36 +1,39 @@
-# ts-docgen-loader
+# ts-docgen
 
-Webpack loader for generating documentation from typescript files.
+[![npm](https://img.shields.io/npm/v/next-global-css.svg?style=flat-square&labelColor=111)][npm]
 
-### Usage example
+## ✈️ Install
 
-```tsx
-import props from "!!ts-docgen-loader!./Component.tsx";
-
-<PropsTable props={props} />;
+```sh
+npm i -DE ts-docgen
 ```
 
-```tsx
-// Component.tsx
+## ☄️ Usage
 
-interface IProps {
-  loading: boolean;
+### As webpack-loader
+
+**component.tsx**
+
+```ts
+import { FC } from 'react'
+
+interface ComponentProps {
+  property: string
 }
 
-// The loader is looking for a default exported function
-export default function Props(_props: IProps) {
-  return null;
-}
+export const Component: FC<ComponentProps> = () => null
 ```
 
-### Props interface
+**documentation.mdx**
 
 ```tsx
-interface IProp {
-  name: string;
-  optional: boolean;
-  type: string;
-  defaultValue?: string;
-  description?: string;
-}
+import { ComponentProps } from '!!ts-docgen/loader!./component.tsx'
+
+<PropsTable value={ComponentProps} />
 ```
+
+## 📜 License
+
+Project is [MIT licensed](https://github.com/bem/ts-docgen/blob/master/license.md).
+
+[npm]: https://www.npmjs.com/package/ts-docgen
