@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
+    "prepublishOnly": "npm run build",
     "test": "jest"
   },
   "repository": {
