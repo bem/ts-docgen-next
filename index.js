@@ -1,11 +1,5 @@
-const tsdocgen = require("./lib/parser");
+'use strict'
 
-module.exports = function() {
-  let value = [];
-  try {
-    value = tsdocgen.parse(this.resourcePath);
-  } catch (error) {
-    console.log("Error in ts-docgen-loader", error);
-  }
-  return `module.exports = ${JSON.stringify(value)}`;
-};
+const parser = require('./lib/parser')
+
+module.exports = parser
