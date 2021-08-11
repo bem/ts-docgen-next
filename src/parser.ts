@@ -6,6 +6,7 @@ export type Property = {
   optional: boolean
   type: string
   defaultValue: string
+  tags: Record<string, string>
 }
 
 type ParseResult = Record<string, Property[]>
@@ -45,6 +46,7 @@ function createProps(props: Props): Property[] {
       optional: !meta.required,
       type: meta.type.name,
       defaultValue: meta.defaultValue ? meta.defaultValue.value : undefined,
+      tags: meta.tags,
     })
   }
 
