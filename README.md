@@ -1,11 +1,11 @@
-# ts-docgen
+# ts-docgen-next
 
-[![npm](https://img.shields.io/npm/v/next-global-css.svg?style=flat-square&labelColor=111)][npm]
+[![npm](https://img.shields.io/npm/v/ts-docgen-next.svg?style=flat-square&labelColor=111)][npm]
 
 ## ✈️ Install
 
 ```sh
-npm i -DE ts-docgen
+npm i -DE ts-docgen-next
 ```
 
 ## ☄️ Usage
@@ -27,13 +27,13 @@ export const Component: FC<ComponentProps> = () => null
 **documentation.mdx**
 
 ```tsx
-import { ComponentProps } from '!!ts-docgen/loader!./component.tsx'
+import { ComponentProps } from '!!ts-docgen-next/loader!./component.tsx'
 
 <PropsTable value={ComponentProps} />
 ```
 
 ## 📜 License
 
-Project is [MIT licensed](https://github.com/bem/ts-docgen/blob/master/license.md).
+Project is [MIT licensed](https://github.com/bem/ts-docgen-next/blob/master/license.md).
 
-[npm]: https://www.npmjs.com/package/ts-docgen
+[npm]: https://www.npmjs.com/package/ts-docgen-next
