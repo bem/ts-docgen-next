@@ -1,6 +1,6 @@
 {
   "name": "ts-docgen-next",
-  "version": "1.0.0-alpha.1",
+  "version": "1.1.0",
   "description": "Webpack loader for generating documentation from typescript files",
   "main": "index.js",
   "scripts": {
