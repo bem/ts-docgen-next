@@ -1,6 +1,6 @@
 {
-  "name": "ts-docgen",
-  "version": "1.0.0",
+  "name": "ts-docgen-next",
+  "version": "1.0.0-alpha.1",
   "description": "Webpack loader for generating documentation from typescript files",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,14 @@
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
+  "files": [
+    "lib",
+    "index.js",
+    "loader.js"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bem/ts-docgen-loader.git"
+    "url": "git+https://github.com/bem/ts-docgen-next.git"
   },
   "keywords": [
     "typescript"
@@ -19,9 +24,9 @@
   "author": "Viacheslav Zinovev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bem/ts-docgen-loader/issues"
+    "url": "https://github.com/bem/ts-docgen-next/issues"
   },
-  "homepage": "https://github.com/bem/ts-docgen-loader#readme",
+  "homepage": "https://github.com/bem/ts-docgen-next#readme",
   "dependencies": {
     "react-docgen-typescript": "^2.0.0"
   },
